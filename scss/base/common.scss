@@ -1,0 +1,188 @@
+@use './variables' as *;
+@use '../base/mixin' as *;
+@use '../components/button' as *;
+
+@mixin body {
+    height: 100vh;
+    opacity: 0;
+    transform: translateX(-$length-200);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: $color-background-white-white;
+
+    &.loaded {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@mixin header {
+    width: 100%;
+    height: $length-192;
+    background-color: $color-surface-gray-subtler;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 $length-48;
+
+    h1 {
+        color: $color-text-border;
+        font-size: $font-size-heading-large;
+    }
+}
+
+@mixin main {
+    width: 100%;
+    flex: 1;
+    padding: 0 $length-48;
+}
+
+@mixin nav {
+    width: 100%;
+    height: $length-192;
+    background-color: $color-surface-white;
+    border-bottom: $length-04 solid $color-border-gray;
+    padding: 0 $length-48;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        li {
+            height: 100%;
+            button {
+                height: 100%;
+                color: $color-text-subtle;
+                font-weight: 700;
+                font-size: $font-size-label-large;
+                margin-right: $length-40;
+                padding: $length-20;
+                transition: all 0.5s ease-in-out;
+
+                &.active {
+                    color: $color-text-secondary;
+                    border-bottom: $length-08 solid $color-border-secondary;
+                }    
+                &:focus-visible {
+                    outline: $length-08 solid $color-text-basic-white;
+                }
+                
+                
+            }
+            &:last-child {
+                button {
+                    margin-right: 0;
+                }                                        
+            }
+        }
+    }
+}
+
+@mixin sub-contents {
+    width: 100%;
+    height: calc(100% - $length-192);
+    padding: 0 $length-48;
+    position: relative;
+    
+    > div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(5.20833vh);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s; /* 애니메이션 속성 추가 */
+        /* 기본적으로 숨겨진 상태 */
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+
+    }
+}
+
+@mixin aside {
+    width: 100%;
+    height: $length-224;
+    background-color: $color-surface-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $length-48;
+    border-top: $length-04 solid $color-divider-gray-light;
+    position: relative;
+
+    .main__controls--voice {
+        display: flex;
+        align-items: center;
+        p {
+            font-size: $font-size-label-small;
+            margin-right: $length-32;       
+        }
+        button {
+            @include controlsBtn;
+
+            &.main__controls--pauseBtn {
+                svg {
+                    width: $length-48;
+                    height: $length-56;
+                }
+            }
+
+            &.main__controls--playBtn {
+                svg {
+                    width: $length-42;
+                    height: $length-52;
+                }
+            }
+            &.main__controls--reproductionBtn {
+                margin-left: $length-24;
+                svg {
+                    width: $length-72;
+                    height: $length-84;
+                    
+                }
+            }
+        }       
+    }
+    .main__controls--homeBtn {
+        @include homeBtn;
+    }
+    .main__controls--lowScreenBtn {
+        @include screenBtn;
+    }
+}
+
+@mixin footer {
+    width: 100%;
+    height: $length-1568;
+    background: url(/assets/images/40c2eb00d84955ae254b353d1e7d5177fc8e37c3.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    /* 원래 푸터 스타일 유지 */
+    transition: all 0.5s ease-in-out; /* 부드러운 전환 효과 */
+    opacity: 1; /* 기본 투명도 */
+    transform: translateY(0); /* 기본 위치 */
+
+    &.moving-out {
+        opacity: 0;
+        transform: translateY(100%); /* 아래로 이동하면서 사라짐 */
+    }
+    &.moving-in {
+        opacity: 1;
+        transform: translateY(0); /* 아래로 이동하면서 사라짐 */
+    }
+    .highScreenBtn-icon {
+        display: none; /* 초기에는 높은 화면 아이콘 숨김 */
+    }
+}

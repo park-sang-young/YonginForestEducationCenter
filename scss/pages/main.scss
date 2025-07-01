@@ -1,0 +1,117 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+@use '../base/common' as *;
+@use '../components/button' as *;
+
+.main-body {
+    @include body;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        header {
+            @include header;
+            justify-content: space-between;
+            a {
+                display: flex;
+                align-items: center;
+                .header__logo {
+                    width: $length-116;
+                    height: $length-120;
+                }
+                .header__title {
+                    font-weight: 700;
+                    font-size: $font-size-heading-xsmall;
+                    margin-left: $length-16;
+                    color: $color-text-basic-white;
+                }
+            }
+            .current-time {
+                color: $color-text-basic-white;
+                font-size: $font-size-label-small;
+            }
+        }
+
+        main {
+            @include main;
+            .main__content {
+                display: flex;
+                height: 100%;
+                .sr-only {
+                    @include sr-only;
+                }
+                article {
+                    width: $length-1360;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    .main__title--content {
+                        color: $color-text-subtle;
+                        font-size: $font-size-heading-xsmall;
+                        font-weight: 700;
+                    }
+                    .main__title {
+                        color: $color-text-border;
+                        font-size: $font-size-heading-large;
+                        font-weight: 700;
+                        margin-top: $length-20;
+                    }
+                    .main__menu {
+                        width: 100%;
+                        height: $length-824;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-content: space-between;
+                        margin: $length-48 0;
+                        button {
+                            @include main-button;
+                        }
+                    }
+
+                    .main__menu--event {
+                        .main__menu--eventArea {
+                            display: flex;
+                            align-items: center;
+                            .main__menu--eventTitle {
+                                p {
+                                    font-weight: 700;
+                                    color: $color-text-primary;
+                                    font-size: $font-size-body-small;
+                                }
+                            }
+                            .main__menu--eventContents {
+                                margin-left: $length-32;
+                                p {
+                                    color: $color-text-basic-white;
+                                    font-size: $font-size-body-small;
+                                }
+                            }
+                        }
+                    }
+                }
+                .main__content--videoArea {
+                    flex: 1;
+                    position: relative;
+                    .sign-video {
+                        max-width: $length-824;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+        aside {
+            @include aside;
+             
+        }
+        footer {
+            @include footer;
+        }
+    }
+}

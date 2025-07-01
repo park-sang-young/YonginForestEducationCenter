@@ -1,0 +1,1690 @@
+body.search-body {
+  opacity: 0;
+  transform: translateX(-9.25924vw);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+body.search-body.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+body.search-body .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.search-body .container header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 27.7778vw;
+  padding: 0 2.22222vw;
+  position: relative;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  overflow: hidden;
+}
+body.search-body .container header .search__header--contentsBtnArea {
+  width: 62.9628vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body.search-body .container header .search__header--contentsBtnArea .search__header--title {
+  font-weight: 700;
+}
+body.search-body .container header .search__header--contentsBtnArea.EngSearch__header--contentsBtnArea {
+  width: 100%;
+}
+body.search-body .container header .main__content--videoArea {
+  width: 30.37035vw;
+}
+body.search-body .container header .main__content--videoArea .sign-video {
+  width: 100%;
+  margin-top: 1.01852vw;
+}
+body.search-body .container main {
+  height: calc(100vh - 27.7778vw - 10.37035vw - 54.6295vw);
+  padding: 3.703702vw 2.22222vw;
+}
+body.search-body .container main .search__main--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+body.search-body .container main .search__main--content .visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+body.search-body .container main .search__main--content .search__main--searchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.703702vw;
+}
+body.search-body .container main .search__main--content .search__main--searchBtn button {
+  width: 16.66665vw;
+  height: 11.85183vw;
+  border-radius: 1.111109vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+body.search-body .container main .search__main--content .search__main--searchBtn button svg {
+  margin-bottom: 0.555554vw;
+}
+body.search-body .container main .search__main--content .search__main--searchBtn button svg.keyboard-icon {
+  width: 3.333332vw;
+  height: 2.26852vw;
+}
+body.search-body .container main .search__main--content .search__main--searchBtn button svg.voice-icon {
+  width: 2.22222vw;
+  height: 3.294662vw;
+}
+body.search-body .container main .search__main--content .search__main--searchBtn button svg.sign-icon {
+  width: 4.25926vw;
+  height: 3.657406vw;
+}
+body.search-body .container main .search__main--content .search__main--searchBtn button.search__main--voiceSearchBtn {
+  margin: 0 2.22222vw;
+}
+body.search-body .container main .search__main--searchContentArea {
+  width: 100%;
+  height: calc(100% - 11.85183vw - 3.703702vw - 7.4074vw);
+  position: relative;
+}
+body.search-body .container main .search__main--searchContentArea > div {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard input {
+  width: 79.443vw;
+  height: 9.629607vw;
+  border-radius: 1.111109vw;
+  padding: 0 2.59861vw;
+  margin-bottom: 3.703702vw;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard {
+  width: 100%;
+  padding: 0.555554vw;
+  background-color: transparent;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row {
+  margin-bottom: 0.925924vw;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row:last-child {
+  margin-bottom: 0;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button {
+  height: 6.4815vw;
+  border-radius: 1.111109vw;
+  border: 0.138889vw solid #DDDFE3;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button span {
+  font-weight: 400;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button:not(:last-child) {
+  margin-right: 0.925924vw;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button.hg-standardBtn {
+  width: 0.925924vw;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice {
+  justify-content: center;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .search-voice-Status {
+  font-weight: 700;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .visualizer {
+  position: relative;
+  width: 33.33331vw;
+  height: 33.33331vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .visualizer .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14.8148vw;
+  height: 14.8148vw;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.8;
+  animation: pulse01 1.2s infinite ease-out;
+  pointer-events: none;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .visualizer .circle:nth-child(1) {
+  animation-delay: 0s;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .visualizer .circle:nth-child(2) {
+  animation-delay: 0.6s;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .visualizer .circle:nth-child(3) {
+  animation-delay: 1.2s;
+}
+@keyframes pulse01 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .visualizer svg {
+  width: 14.8148vw;
+  height: 14.8148vw;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentVoice .search-voice-content {
+  font-weight: 400;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign {
+  justify-content: center;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .search-sign-Status {
+  font-weight: 700;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .visualizer {
+  position: relative;
+  width: 33.33331vw;
+  height: 33.33331vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .visualizer .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14.8148vw;
+  height: 14.8148vw;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.8;
+  animation: pulse02 1.2s infinite ease-out;
+  pointer-events: none;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .visualizer .circle:nth-child(1) {
+  animation-delay: 0s;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .visualizer .circle:nth-child(2) {
+  animation-delay: 0.6s;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .visualizer .circle:nth-child(3) {
+  animation-delay: 1.2s;
+}
+@keyframes pulse02 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .visualizer svg {
+  width: 14.8148vw;
+  height: 14.8148vw;
+}
+body.search-body .container main .search__main--searchContentArea .search__main--searchContentSign .search-sign-content {
+  font-weight: 400;
+}
+body.search-body .container main .search__main--searchExitBtn {
+  width: 30.37035vw;
+  height: 7.4074vw;
+  border-radius: 0.925924vw;
+  font-weight: 700;
+}
+body.search-body .container main .search__main--accordianArea {
+  width: 79.443vw;
+  height: calc(100% - 7.4074vw);
+}
+body.search-body .container main .search__main--accordianArea .accordion {
+  width: 100%;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item {
+  border-radius: 1.111109vw;
+  margin-bottom: 1.48148vw;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item .accordion-header {
+  border-radius: 1.111109vw;
+  width: 100%;
+  height: 8.8889vw;
+  padding: 0 2.59861vw;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item .accordion-header .accordion-title {
+  font-weight: 700;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item .accordion-header .accordion-icon svg {
+  width: 2.129628vw;
+  height: 1.25vw;
+  transition: all 0.5s ease-in-out;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item .accordion-header:active {
+  background: #e0e0e0;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item .accordion-content {
+  border-radius: 1.111109vw;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding: 0 2.59861vw;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding: 2.59861vw;
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item.active .accordion-icon svg {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(180deg);
+}
+body.search-body .container main .search__main--accordianArea .accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+body.search-body .container main .search__main--accordianSearchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body .container main .search__main--accordianSearchBtn > button {
+  width: 30.37035vw;
+  height: 7.4074vw;
+  border-radius: 0.925924vw;
+  font-weight: 700;
+}
+body.search-body .container main .search__main--accordianSearchBtn > button.search__main--searchExitBtn {
+  margin-right: 1.111109vw;
+}
+body.search-body .container main .search__main--accordianSearchBtn > button.search__main--searchReloadBtn {
+  margin-left: 1.111109vw;
+}
+body.search-body .container .main__controls {
+  width: 100%;
+  position: relative;
+  height: 10.37035vw;
+  background-color: #FFFFFF;
+  border-top: 0.138889vw solid #DDDFE3;
+  padding: 0 2.22222vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.search-body .container .main__controls .main__controls--btn {
+  width: 18.5185vw;
+  height: 5.925903vw;
+  background-color: #EEEFF1;
+  border-radius: 0.925924vw;
+  font-size: 2.499998vw;
+  color: #1F2126;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+body.search-body .container .main__controls .main__controls--btn svg {
+  margin-right: 0.925924vw;
+}
+body.search-body .container .main__controls .main__controls--btn svg.accessibilityBtn-icon {
+  width: 2.083331vw;
+  height: 2.77778vw;
+}
+body.search-body .container .main__controls .main__controls--btn svg.lowScreenBtn-icon, body.search-body .container .main__controls .main__controls--btn svg.highScreenBtn-icon {
+  width: 2.083331vw;
+  height: 2.083331vw;
+}
+body.search-body .container .main__controls .accessibility-menu {
+  display: block;
+  position: absolute;
+  bottom: 90%;
+  left: 2.962961vw;
+  border-radius: 0.925924vw;
+  z-index: 1000;
+  width: 54.07385vw;
+  height: 38.8889vw;
+  opacity: 0;
+  transform: translateY(4.62963vw);
+  pointer-events: none;
+  transition: all 0.5s ease;
+  padding: 2.962961vw;
+  box-shadow: 0.0925924vw 0.0925924vw 0.925924vw rgba(0, 0, 0, 0.4);
+}
+body.search-body .container .main__controls .accessibility-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+body.search-body .container .main__controls .accessibility-menu.EngAccessibility-menu {
+  width: 61.111vw;
+  height: 33.33331vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body.search-body .container .main__controls .accessibility-menu ul li {
+  cursor: pointer;
+  transition: all 0.5s;
+  color: #1F2126;
+  font-size: 2.499998vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li:hover {
+  background: #F5F6FA;
+  color: #415888;
+}
+body.search-body .container .main__controls .accessibility-menu ul li > p {
+  font-weight: 700;
+}
+body.search-body .container .main__controls .accessibility-menu ul li > .accessibility-btn {
+  display: flex;
+}
+body.search-body .container .main__controls .accessibility-menu ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body.search-body .container .main__controls .accessibility-menu ul li > .accessibility-btn button {
+  background: #FFFFFF;
+  padding: 1.111109vw;
+  width: 15.74072vw;
+  height: 5.1852vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.search-body .container .main__controls .accessibility-menu ul li > .accessibility-btn button:first-child {
+  border-top-left-radius: 0.74074vw;
+  border-bottom-left-radius: 0.74074vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li > .accessibility-btn button:last-child {
+  border-top-right-radius: 0.74074vw;
+  border-bottom-right-radius: 0.74074vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control {
+  display: flex;
+  align-items: center;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 31.4815vw;
+  height: 3.703702vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-btn {
+  width: 3.703702vw;
+  height: 3.703702vw;
+  border-radius: 1000px;
+  border: 0.0925924vw solid #DDDFE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-btn svg.minusVolume-btnIcon {
+  width: 1.296294vw;
+  height: 0.185185vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-btn svg.plusVolume-btnIcon {
+  width: 1.296294vw;
+  height: 1.296294vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-bar-container {
+  display: flex;
+  align-items: center;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-bar-container .volume-bar {
+  display: flex;
+  gap: 1.48148vw;
+  cursor: pointer;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-bar-container .volume-bar .volume-segment {
+  width: 1.85185vw;
+  height: 2.77778vw;
+  transition: background-color 0.5s;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.speech-speed {
+  display: flex;
+  align-items: center;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18.8889vw;
+  height: 3.703702vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-btn {
+  width: 3.703702vw;
+  height: 3.703702vw;
+  border-radius: 1000px;
+  border: 0.0925924vw solid #DDDFE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-btn svg.minusVolume-btnIcon {
+  width: 1.296294vw;
+  height: 0.185185vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-btn svg.plusVolume-btnIcon {
+  width: 1.296294vw;
+  height: 1.296294vw;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range {
+  width: 9.25924vw;
+  height: 0.462963vw;
+  border-radius: 0.185185vw;
+  margin: 0 auto;
+  outline: 0;
+}
+body.search-body .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range::-webkit-slider-thumb {
+  position: relative;
+  z-index: 1;
+  -webkit-appearance: none;
+  width: 1.85185vw;
+  height: 1.85185vw;
+  border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+body.search-body .container .main__controls .main__controls--control {
+  display: flex;
+  align-items: center;
+}
+body.search-body .container .main__controls .main__controls--control p {
+  font-size: 2.499998vw;
+  color: #1F2126;
+}
+body.search-body .container .main__controls .main__controls--control button {
+  width: 3.703702vw;
+  height: 3.703702vw;
+  border: 0.0925924vw solid #DDDFE3;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+body.search-body .container .main__controls .main__controls--control button.main__controls--pauseBtn, body.search-body .container .main__controls .main__controls--control button.main__controls--playBtn {
+  margin: 0 1.111109vw;
+}
+body.search-body .container .main__controls .main__controls--control button svg.pauseBtn-icon {
+  width: 1.111109vw;
+  height: 1.296294vw;
+}
+body.search-body .container .main__controls .main__controls--control button svg.playBtn-icon {
+  width: 0.97222vw;
+  height: 1.203702vw;
+}
+body.search-body .container .main__controls .main__controls--control button svg.reproductionBtn-icon {
+  width: 1.666665vw;
+  height: 1.944443vw;
+}
+body.search-body .container .main__controls .main__controls--control button:disabled {
+  background: #DDDFE3;
+}
+body.search-body .container .main__controls .main__controls--control button:disabled svg path {
+  fill: #8F95A3;
+}
+body.search-body .container .main__controls .main__controls--control.EngMain__controls--sign {
+  opacity: 0;
+}
+body.search-body .container .main__controls .main__controls--homeBtn {
+  width: 7.4074vw;
+  height: 7.4074vw;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+body.search-body .container .main__controls .main__controls--homeBtn svg {
+  width: 2.962961vw;
+  height: 3.24074vw;
+}
+body.search-body .container footer {
+  width: 100%;
+  height: 54.6295vw;
+  margin-top: 0;
+  flex-shrink: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  will-change: transform, opacity;
+}
+body.search-body .container footer #footerImage {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  display: block;
+  z-index: 10;
+}
+body.search-body .container footer.moving-out {
+  opacity: 0;
+  transform: translateY(2.314813vw);
+}
+body.search-body .container footer.moving-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.search-body.light-mode {
+  transition: all 0.5s ease-in-out;
+  background-color: #FFFFFF;
+  color: #F7F7F8;
+}
+body.search-body.light-mode .container header {
+  transition: all 0.5s ease-in-out;
+  border-bottom: 0.138889vw solid #DDDFE3;
+}
+body.search-body.light-mode .container header .search__header--contentsBtnArea .search__header--title {
+  transition: all 0.5s ease-in-out;
+  color: #17181C;
+}
+body.search-body.light-mode .container header .search__header--contentsBtnArea > p {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button {
+  transition: all 0.5s ease-in-out;
+  border: 0.138889vw solid #DDDFE3;
+  color: #4A4E5A;
+  background-color: #FFFFFF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button svg path {
+  fill: #4A4E5A;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button.active {
+  transition: all 0.5s ease-in-out;
+  color: #FFFFFF;
+  background-color: #415888;
+  border: 0.138889vw solid #415888;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button.active svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #FFFFFF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button.active:focus-visible {
+  transition: all 0.5s ease-in-out;
+  color: #FFFFFF;
+  background-color: #415888;
+  border: 0.138889vw solid #415888;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button.active.pressed {
+  transition: all 0.5s ease-in-out;
+  border: 0.138889vw solid #6E7486;
+  background-color: #EEEFF1;
+  color: #4A4E5A;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button.active.pressed svg path {
+  fill: #4A4E5A;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  border: #F5F6FA;
+  background-color: #F5F6FA;
+  outline: 0.138889vw solid #000000;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchBtn button.pressed {
+  transition: all 0.5s ease-in-out;
+  border: 0.138889vw solid #6E7486;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea > div svg.pressed .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #0E437E;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea > div svg.pressed .icon-path {
+  transition: all 0.5s ease-in-out;
+  fill: #FFFFFF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #6E7486;
+  color: #1F2126;
+  background: url(/assets/images/search_icon_normal.png) no-repeat 73.55vw center;
+  background-size: 3.294662vw;
+  background-color: #FFFFFF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input::placeholder {
+  transition: all 0.5s ease-in-out;
+  color: #B3B7C1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input::-webkit-input-placeholder {
+  transition: all 0.5s ease-in-out;
+  color: #B3B7C1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input:-ms-input-placeholder {
+  transition: all 0.5s ease-in-out;
+  color: #B3B7C1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input:focus-visible {
+  transition: all 0.5s ease-in-out;
+  background: url(/assets/images/search_icon_normal_focus.png) no-repeat 73.55vw center;
+  background-size: 3.294662vw;
+  border: 0.185185vw solid #0D63BF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #DDDFE3;
+  background-color: #FFFFFF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button span {
+  transition: all 0.5s ease-in-out;
+  color: #4A4E5A;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.138889vw solid #000000;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button.hg-activeButton, body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button.pressed {
+  transition: all 0.5s ease-in-out;
+  border: 0.138889vw solid #6E7486;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice > p {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer {
+  position: relative;
+  width: 33.33331vw;
+  height: 33.33331vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer .circle {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #278efc;
+  box-shadow: 0 0 12px rgba(102, 143, 255, 0.8);
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer svg .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #0D63BF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer svg .icon-path {
+  transition: all 0.5s ease-in-out;
+  fill: #FFFFFF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer svg:focus-visible .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #0C4D98;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign > p {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer {
+  position: relative;
+  width: 33.33331vw;
+  height: 33.33331vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer .circle {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #278efc;
+  box-shadow: 0 0 12px rgba(102, 143, 255, 0.8);
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer svg .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #0D63BF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer svg .icon-path {
+  transition: all 0.5s ease-in-out;
+  fill: #FFFFFF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer svg:focus-visible .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #0C4D98;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+  border: 0.0925924vw solid #6E7486;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchExitBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--searchExitBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #CACCD3;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header {
+  color: #1F2126;
+  background-color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header .accordion-icon svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #3C3F49;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header:focus-visible {
+  transition: all 0.5s ease-in-out;
+  background-color: #F7F7F8;
+  outline: 0.138889vw solid #000000;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-content {
+  transition: all 0.5s ease-in-out;
+  background-color: #F5F6FA;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item.active {
+  transition: all 0.5s ease-in-out;
+  background-color: #F5F6FA;
+  border: 0.185185vw solid #415888;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item.active .accordion-header {
+  transition: all 0.5s ease-in-out;
+  background-color: #F5F6FA;
+  color: #415888;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item.active .accordion-content p {
+  transition: all 0.5s ease-in-out;
+  color: #4A4E5A;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+  border: 0.0925924vw solid #6E7486;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn {
+  transition: all 0.5s ease-in-out;
+  color: #FFFFFF;
+  background-color: #0D63BF;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #0E437E;
+}
+body.search-body.light-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+body.search-body.light-mode .container .main__controls {
+  transition: all 0.5s ease-in-out;
+  background-color: #FFFFFF;
+  border-top: 0.138889vw solid #DDDFE3;
+}
+body.search-body.light-mode .container .main__controls .main__controls--btn {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+  color: #1F2126;
+}
+body.search-body.light-mode .container .main__controls .main__controls--btn svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #3C3F49;
+}
+body.search-body.light-mode .container .main__controls .main__controls--btn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #CACCD3;
+  color: #1F2126;
+}
+body.search-body.light-mode .container .main__controls .main__controls--btn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu {
+  transition: all 0.5s ease-in-out;
+  border: 0.138889vw solid #DDDFE3;
+  background: #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li {
+  transition: all 0.5s ease-in-out;
+  background: #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li > p {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+  border: 0.0925924vw solid #6E7486;
+  background: #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.active {
+  transition: all 0.5s ease-in-out;
+  background-color: #0D63BF;
+  color: #FFFFFF;
+  border: 0.0925924vw solid #0D63BF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.active.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #0D63BF;
+  border: 0.0925924vw solid #0D63BF;
+  color: #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.active:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+  position: relative;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+  position: relative;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #DDDFE3;
+  background-color: #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #3C3F49;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button.pressed svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #3C3F49;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button:disabled {
+  transition: all 0.5s ease-in-out;
+  background-color: #DDDFE3;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button:disabled svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #8F95A3;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-bar-container .volume-bar .volume-segment {
+  transition: all 0.5s ease-in-out;
+  background-color: #DDDFE3;
+  border: 0.0925924vw solid #DDDFE3;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-bar-container .volume-bar .volume-segment.active {
+  transition: all 0.5s ease-in-out;
+  background-color: #0D63BF;
+  border: 0.0925924vw solid #0D63BF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #DDDFE3;
+  background-color: #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #3C3F49;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button.pressed svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #3C3F49;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button:disabled {
+  transition: all 0.5s ease-in-out;
+  background-color: #DDDFE3;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button:disabled svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #8F95A3;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range {
+  transition: all 0.5s ease-in-out;
+  background-color: #DDDFE3;
+  border: 0.0925924vw solid #DDDFE3;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range::-webkit-slider-thumb {
+  transition: all 0.5s ease-in-out;
+  background-color: #0D63BF;
+  box-shadow: 0 0 0 0.3703702vw rgba(13, 99, 191, 0.3);
+  border: 0.0925924vw solid #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range:disabled::-webkit-slider-thumb {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.5;
+}
+body.search-body.light-mode .container .main__controls .main__controls--control p {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+}
+body.search-body.light-mode .container .main__controls .main__controls--control button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #DDDFE3;
+  background-color: #FFFFFF;
+}
+body.search-body.light-mode .container .main__controls .main__controls--control button svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #3C3F49;
+}
+body.search-body.light-mode .container .main__controls .main__controls--control button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+body.search-body.light-mode .container .main__controls .main__controls--control button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+  border: 0.0925924vw solid #EEEFF1;
+}
+body.search-body.light-mode .container .main__controls .main__controls--control button:disabled {
+  transition: all 0.5s ease-in-out;
+  background-color: #DDDFE3;
+}
+body.search-body.light-mode .container .main__controls .main__controls--control button:disabled svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #8F95A3;
+}
+body.search-body.light-mode .container .main__controls .main__controls--homeBtn {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #0D63BF;
+  background-color: #F1F7FE;
+}
+body.search-body.light-mode .container .main__controls .main__controls--homeBtn svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #0D63BF;
+}
+body.search-body.light-mode .container .main__controls .main__controls--homeBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #0D63BF;
+  background-color: #BEDBF9;
+}
+body.search-body.light-mode .container .main__controls .main__controls--homeBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #000000;
+}
+
+body.search-body.dark-mode {
+  transition: all 0.5s ease-in-out;
+  background-color: #000000;
+  color: #1F2126;
+}
+body.search-body.dark-mode .container header {
+  transition: all 0.5s ease-in-out;
+  border-bottom: 0.138889vw solid #3C3F49;
+}
+body.search-body.dark-mode .container header .search__header--contentsBtnArea .search__header--title {
+  transition: all 0.5s ease-in-out;
+  color: #EEEFF1;
+}
+body.search-body.dark-mode .container header .search__header--contentsBtnArea > p {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button {
+  transition: all 0.5s ease-in-out;
+  border: 0.138889vw solid #3C3F49;
+  color: #DDDFE3;
+  background-color: #000000;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #DDDFE3;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button.active {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+  background-color: #99C1E0;
+  border: 0.138889vw solid #99C1E0;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button.active svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #1F2126;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button.active:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.138889vw solid #ffffff;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button.active.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #17181C;
+  border: 0.138889vw solid #17181C;
+  color: #DDDFE3;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button.active.pressed svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #DDDFE3;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.138889vw solid #ffffff;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchBtn button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #17181C;
+  border: 0.138889vw solid #17181C;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea > div svg.pressed .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #421F06;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea > div svg.pressed .icon-path {
+  transition: all 0.5s ease-in-out;
+  fill: #ffffff;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #B3B7C1;
+  color: #F7F7F8;
+  background: url(/assets/images/search_icon_dark.png) no-repeat 73.55vw center;
+  background-color: #1F2126;
+  background-size: 3.294662vw;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input::placeholder {
+  transition: all 0.5s ease-in-out;
+  color: #6E7486;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input::-webkit-input-placeholder {
+  transition: all 0.5s ease-in-out;
+  color: #6E7486;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input:-ms-input-placeholder {
+  transition: all 0.5s ease-in-out;
+  color: #6E7486;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input:focus-visible {
+  transition: all 0.5s ease-in-out;
+  background: url(/assets/images/search_icon_dark_focus.png) no-repeat 73.55vw center;
+  background-size: 3.294662vw;
+  border: 0.185185vw solid #FDDE47;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #B3B7C1;
+  background-color: #1F2126;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button span {
+  transition: all 0.5s ease-in-out;
+  color: #DDDFE3;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button.hg-activeButton {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #17181C;
+  background-color: #17181C;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice > p {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer {
+  position: relative;
+  width: 33.33331vw;
+  height: 33.33331vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer .circle {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #FDDE47;
+  box-shadow: 0 0 12px rgba(241, 255, 180, 0.8);
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer svg .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #FDDE47;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer svg .icon-path {
+  transition: all 0.5s ease-in-out;
+  fill: #1F2126;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .visualizer svg:focus-visible .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #421F06;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign > p {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer {
+  position: relative;
+  width: 33.33331vw;
+  height: 33.33331vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer .circle {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #FDDE47;
+  box-shadow: 0 0 12px rgba(241, 255, 180, 0.8);
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer svg .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #FDDE47;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer svg .icon-path {
+  transition: all 0.5s ease-in-out;
+  fill: #1F2126;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .visualizer svg:focus-visible .icon-background {
+  transition: all 0.5s ease-in-out;
+  fill: #421F06;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+  border: 0.0925924vw solid #DDDFE3;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchExitBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #F7F7F8;
+  border: 0.0925924vw solid #F7F7F8;
+  color: #1F2126;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--searchExitBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #4A4E5A;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header {
+  color: #F7F7F8;
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header .accordion-icon svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #F7F7F8;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #17181C;
+  border: 0.138889vw solid #17181C;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.138889vw solid #ffffff;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-content {
+  transition: all 0.5s ease-in-out;
+  background-color: #16283B;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item.active {
+  transition: all 0.5s ease-in-out;
+  background-color: #16283B;
+  border: 0.185185vw solid #99C1E0;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item.active .accordion-header {
+  transition: all 0.5s ease-in-out;
+  background-color: #16283B;
+  color: #99C1E0;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item.active .accordion-content p {
+  transition: all 0.5s ease-in-out;
+  color: #DDDFE3;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+  border: 0.0925924vw solid #DDDFE3;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #F7F7F8;
+  border: 0.0925924vw solid #F7F7F8;
+  color: #1F2126;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn {
+  transition: all 0.5s ease-in-out;
+  color: #1F2126;
+  background-color: #FDDE47;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #421F06;
+  color: #FDDE47;
+}
+body.search-body.dark-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container .main__controls {
+  transition: all 0.5s ease-in-out;
+  background-color: #000000;
+  border-top: 0.138889vw solid #3C3F49;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--btn {
+  transition: all 0.5s ease-in-out;
+  background-color: #1F2126;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--btn svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--btn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #17181C;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--btn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu {
+  transition: all 0.5s ease-in-out;
+  border: 0.138889vw solid #3C3F49;
+  background: #17181C;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li {
+  transition: all 0.5s ease-in-out;
+  background: #17181C;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li > p {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+  border: 0.0925924vw solid #DDDFE3;
+  background: #17181C;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.active {
+  transition: all 0.5s ease-in-out;
+  background-color: #FDDE47;
+  color: #1F2126;
+  border: 0.0925924vw solid #FDDE47;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.active.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #FDDE47;
+  color: #1F2126;
+  border: 0.0925924vw solid #FDDE47;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.active:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+  position: relative;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+  color: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li > .accessibility-btn button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+  position: relative;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #3C3F49;
+  background-color: #000000;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+  color: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button.pressed svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button:disabled {
+  transition: all 0.5s ease-in-out;
+  background-color: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area button:disabled svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #8F95A3;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-bar-container .volume-bar .volume-segment {
+  transition: all 0.5s ease-in-out;
+  background-color: #1F2126;
+  border: 0.0925924vw solid #3C3F49;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.volume-control .volume-control-area .volume-bar-container .volume-bar .volume-segment.active {
+  transition: all 0.5s ease-in-out;
+  background-color: #FDDE47;
+  border: 0.0925924vw solid #FDDE47;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #3C3F49;
+  background-color: #000000;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+  color: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button.pressed svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button:disabled {
+  transition: all 0.5s ease-in-out;
+  background-color: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area button:disabled svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #8F95A3;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range {
+  transition: all 0.5s ease-in-out;
+  background-color: #1F2126;
+  border: 0.0925924vw solid #3C3F49;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range::-webkit-slider-thumb {
+  transition: all 0.5s ease-in-out;
+  background-color: #FDDE47;
+  box-shadow: 0 0 0 0.3703702vw rgba(253, 222, 71, 0.3);
+  border: 0.0925924vw solid #FFFFFF;
+}
+body.search-body.dark-mode .container .main__controls .accessibility-menu ul li.speech-speed .speech-speed-area .speed-range:disabled::-webkit-slider-thumb {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.5;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control p {
+  transition: all 0.5s ease-in-out;
+  color: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control button {
+  transition: all 0.5s ease-in-out;
+  border: 0.0925924vw solid #3C3F49;
+  background-color: #000000;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control button svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #F7F7F8;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control button:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #EEEFF1;
+  border: 0.0925924vw solid #EEEFF1;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control button.pressed svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control button:disabled {
+  transition: all 0.5s ease-in-out;
+  background-color: #1F2126;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--control button:disabled svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #8F95A3;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--homeBtn {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #FDDE47;
+  background-color: #421F06;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--homeBtn svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #FDDE47;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--homeBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  border: 0.185185vw solid #FDDE47;
+  background-color: #713E12;
+}
+body.search-body.dark-mode .container .main__controls .main__controls--homeBtn:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.277778vw solid #ffffff;
+}
+
+body.search-body.normal-mode .container header .search__header--contentsBtnArea .search__header--title {
+  transition: all 0.5s ease-in-out;
+  font-size: 3.703702vw;
+}
+body.search-body.normal-mode .container header .search__header--contentsBtnArea > p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchBtn button {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button span {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .search-voice-Status {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .search-voice-content {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .search-sign-Status {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .search-sign-content {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header .accordion-title {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-content p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container aside .main__controls--btn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container aside .accessibility-menu ul li > p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container aside .accessibility-menu ul li > .accessibility-btn button {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container aside .accessibility-menu ul li.volume-control {
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container aside .accessibility-menu ul li.speech-speed {
+  font-size: 2.499998vw;
+}
+body.search-body.normal-mode .container aside .main__controls--control p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.499998vw;
+}
+
+body.search-body.large-mode .container header .search__header--contentsBtnArea .search__header--title {
+  transition: all 0.5s ease-in-out;
+  font-size: 3.98148vw;
+}
+body.search-body.large-mode .container header .search__header--contentsBtnArea > p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchBtn button {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard input {
+  transition: all 0.5s ease-in-out;
+  font-size: 3.055554vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentKeyboard .simple-keyboard .hg-rows .hg-row .hg-button span {
+  transition: all 0.5s ease-in-out;
+  font-size: 3.055554vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .search-voice-Status {
+  transition: all 0.5s ease-in-out;
+  font-size: 3.055554vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentVoice .search-voice-content {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .search-sign-Status {
+  transition: all 0.5s ease-in-out;
+  font-size: 3.055554vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchContentArea .search__main--searchContentSign .search-sign-content {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-header .accordion-title {
+  transition: all 0.5s ease-in-out;
+  font-size: 3.703702vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--accordianArea .accordion .accordion-item .accordion-content p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchExitBtn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container main .search__main--content .search__main--accordianSearchBtn .search__main--searchReloadBtn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container aside .main__controls--btn {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container aside .accessibility-menu ul li > p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container aside .accessibility-menu ul li > .accessibility-btn button {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container aside .accessibility-menu ul li.volume-control {
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container aside .accessibility-menu ul li.speech-speed {
+  font-size: 2.77778vw;
+}
+body.search-body.large-mode .container aside .main__controls--control p {
+  transition: all 0.5s ease-in-out;
+  font-size: 2.77778vw;
+}
+
+/*# sourceMappingURL=search.css.map */

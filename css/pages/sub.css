@@ -1,0 +1,711 @@
+@charset "UTF-8";
+.sub-body {
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(-5.20833vh);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  background-color: #FFFFFF;
+}
+.sub-body.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+.sub-body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.sub-body .container header {
+  width: 100%;
+  height: 5vh;
+  background-color: #F4F5F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.25vh;
+}
+.sub-body .container header h1 {
+  color: #131416;
+  font-size: 2.083333vh;
+}
+.sub-body .container main {
+  width: 100%;
+  flex: 1;
+  padding: 0 1.25vh;
+  padding: 0;
+}
+.sub-body .container main .main__content {
+  height: 100%;
+}
+.sub-body .container main .main__content .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sub-body .container main .main__content article {
+  height: 100%;
+}
+.sub-body .container main .main__content article .main__navigation {
+  width: 100%;
+  height: 5vh;
+  background-color: #FFFFFF;
+  border-bottom: 0.1041666vh solid #B1B8BE;
+  padding: 0 1.25vh;
+}
+.sub-body .container main .main__content article .main__navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.sub-body .container main .main__content article .main__navigation ul li {
+  height: 100%;
+}
+.sub-body .container main .main__content article .main__navigation ul li button {
+  height: 100%;
+  color: #464C53;
+  font-weight: 700;
+  font-size: 1.5625vh;
+  margin-right: 1.041666vh;
+  padding: 0.520833vh;
+  transition: all 0.5s ease-in-out;
+}
+.sub-body .container main .main__content article .main__navigation ul li button.active {
+  color: #035A63;
+  border-bottom: 0.2083333vh solid #007C85;
+}
+.sub-body .container main .main__content article .main__navigation ul li button:focus-visible {
+  outline: 0.2083333vh solid #1E2124;
+}
+.sub-body .container main .main__content article .main__navigation ul li:last-child button {
+  margin-right: 0;
+}
+.sub-body .container main .main__content article .main__contents {
+  width: 100%;
+  height: calc(100% - 5vh);
+  padding: 0 1.25vh;
+  position: relative;
+}
+.sub-body .container main .main__content article .main__contents > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(5.20833vh);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s; /* 애니메이션 속성 추가 */
+  /* 기본적으로 숨겨진 상태 */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sub-body .container main .main__content article .main__contents > div.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--photoArea {
+  width: 35.4166vh;
+  height: 20.83332vh;
+  border-radius: 0.625vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--photoArea.main__contents--photoEdu1F {
+  background: url(/assets/images/cff3858f45ba746c55aabc8f9426e8c03797239a.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--photoArea.main__contents--photoEdu2F {
+  background: url(/assets/images/263270bf861f11e6a18e7d7f42eb00f55719c12f.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--photoArea.main__contents--photoEdu3F {
+  background: url(/assets/images/bc4a245f3f37d0a8d817ad746e1c526dc31a7de7.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--photoArea.main__contents--photoAccommodation {
+  background: url(/assets/images/0a5e3480caf0c3caeffe8d799971aafb04228cbd.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--photoArea.main__contents--photoWelfare {
+  background: url(/assets/images/5b8ed1becbdc1c84a1fa727f798cc2170c152658.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--contentArea {
+  margin-top: 1.25vh;
+  width: 35.4166vh;
+  min-height: 13.38411vh;
+  padding: 1.25vh;
+  background-color: #FFFFFF;
+  border: 0.0520833vh solid #CDD1D5;
+  border-radius: 0.625vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--contentArea .main__contents--title {
+  color: #035A63;
+  font-weight: 700;
+  font-size: 1.875vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--contentArea .main__contents--explanation {
+  margin-top: 0.833333vh;
+  padding-left: 1.875vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--contentArea .main__contents--explanation li {
+  list-style: disc;
+  font-size: 1.354166vh;
+  color: #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--contentArea .main__contents--explanation li p {
+  font-size: 1.458332vh;
+  color: #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--greetings {
+  flex-direction: row;
+  padding: 0 1.25vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--greetingsArea {
+  width: 35.4166vh;
+  border-radius: 0.625vh;
+  border: 0.0520833vh solid #CDD1D5;
+  padding: 1.25vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--greetingsArea .main__contents--greetingText .greetingTitle {
+  color: #035A63;
+  font-size: 1.875vh;
+  font-weight: 700;
+  margin-bottom: 1.25vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--greetingsArea .main__contents--greetingText .greetingWelcome {
+  font-weight: 700;
+  color: #1E2124;
+  font-size: 1.354166vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--greetingsArea .main__contents--greetingText .greetingThank {
+  color: #1E2124;
+  font-size: 1.354166vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--greetingsArea hr {
+  width: 100%;
+  height: 0.0520833vh;
+  background-color: #CDD1D5;
+  margin: 1.25vh 0;
+}
+.sub-body .container main .main__content article .main__contents > div .main__content--videoArea {
+  flex: 1;
+  position: relative;
+}
+.sub-body .container main .main__content article .main__contents > div .main__content--videoArea video {
+  max-width: 21.45832vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--facilities {
+  padding: 0 1.25vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea {
+  width: 100%;
+  border: 0.0520833vh solid #CDD1D5;
+  padding: 1.25vh;
+  border-radius: 0.625vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesText .facilitiesTitle {
+  color: #035A63;
+  font-size: 1.875vh;
+  font-weight: 700;
+  margin-bottom: 1.25vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesText .facilitiesWelcome {
+  font-weight: 700;
+  color: #1E2124;
+  font-size: 1.354166vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea hr {
+  width: 100%;
+  height: 0.0520833vh;
+  background-color: #CDD1D5;
+  margin: 1.25vh 0;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesExplanationArea {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesExplanationArea .main__contents--facilitiesTitle p {
+  color: #035A63;
+  font-size: 1.354166vh;
+  font-weight: 700;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesExplanationArea .main__contents--facilitiesExplanation {
+  width: 42.96863vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesExplanationArea .main__contents--facilitiesExplanation > p {
+  font-weight: 700;
+  font-size: 1.354166vh;
+  padding: 0;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesExplanationArea .main__contents--facilitiesExplanation ul {
+  padding-left: 1.875vh;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesExplanationArea .main__contents--facilitiesExplanation ul li {
+  list-style: disc;
+  font-size: 1.354166vh;
+  color: #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div .main__contents--facilitiesArea .main__contents--facilitiesExplanationArea .main__contents--facilitiesExplanation ul li p {
+  font-size: 1.458332vh;
+  color: #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter {
+  padding: 2.083333vh 1.25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabBtn button {
+  width: 8.33333vh;
+  height: 2.916654vh;
+  padding: 1.041666vh 0;
+  border-radius: 0.416666vh;
+  border: 0.0520833vh solid #B1B8BE;
+  background-color: #FFFFFF;
+  color: #464C53;
+  font-weight: 700;
+  font-size: 1.354166vh;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.625vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabBtn button.active {
+  background-color: #007C85;
+  border: 0.0520833vh solid #007C85;
+  color: #FFFFFF;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabBtn button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #E6EEEF;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabBtn button:focus-visible {
+  outline: 0.2083333vh solid #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabBtn button:last-child {
+  margin-right: 0;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabArea {
+  border: 0.0520833vh solid #CDD1D5;
+  border-radius: 0.625vh;
+  width: 100%;
+  height: 34.16654vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabArea > div {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(5.20833vh); /* 초기 위치 */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--educationCenter .main__content--tabArea > div.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation {
+  padding: 2.083333vh 1.25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabBtn button {
+  width: 8.33333vh;
+  height: 2.916654vh;
+  padding: 1.041666vh 0;
+  border-radius: 0.416666vh;
+  border: 0.0520833vh solid #B1B8BE;
+  background-color: #FFFFFF;
+  color: #464C53;
+  font-weight: 700;
+  font-size: 1.354166vh;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.625vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabBtn button.active {
+  background-color: #007C85;
+  border: 0.0520833vh solid #007C85;
+  color: #FFFFFF;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabBtn button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #E6EEEF;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabBtn button:focus-visible {
+  outline: 0.2083333vh solid #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabBtn button:last-child {
+  margin-right: 0;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabArea {
+  border: 0.0520833vh solid #CDD1D5;
+  border-radius: 0.625vh;
+  width: 100%;
+  height: 34.16654vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabArea > div {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(5.20833vh); /* 초기 위치 */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--Accommodation .main__content--tabArea > div.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea {
+  padding: 2.083333vh 1.25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle {
+  width: 44.16654vh;
+  height: 8.33333vh;
+  padding: 1.25vh;
+  border-radius: 0.625vh;
+  display: flex;
+  align-items: center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle.forestRoad-title {
+  background: url(/assets/images/14042cc7da7a79f520b36dc1001372f396946820.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle.forestCommentary-title {
+  background: url(/assets/images/c4d36fe45e504313afede4bfbc8608df2625bba9.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle.forestHealing-title {
+  background: url(/assets/images/73dfcfc469e3896127d2fd3af64b08f23493d0b7.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle.wood-title {
+  background: url(/assets/images/5c684ef2608c1cc4e220e2372d59c6bd304b5c2b.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle.youForest-title {
+  background: url(/assets/images/e21a9af4ad893f620234a2ee0ea2dbf8740e369c.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle.infant-title {
+  background: url(/assets/images/fb4b9cb6c484abb814fd04cd8a1b332413bf9743.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramPhotoTitle > p {
+  font-size: 2.70833vh;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode {
+  width: 8.33333vh;
+  height: 8.33333vh;
+  border: 0.0520833vh solid #CDD1D5;
+  border-radius: 0.625vh;
+  padding: 0.625vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode .qrcodeArea {
+  width: 100%;
+  height: 100%;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode .qrcodeArea.forestRoad-QRcode {
+  background-size: cover;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode .qrcodeArea.forestCommentary-QRcode {
+  background-size: cover;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode .qrcodeArea.forestHealing-QRcode {
+  background-size: cover;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode .qrcodeArea.wood-QRcode {
+  background-size: cover;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode .qrcodeArea.youForest-QRcode {
+  background-size: cover;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramTitleArea .main__contents--eduProgramQRcode .qrcodeArea.infant-QRcode {
+  background-size: cover;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents {
+  width: 100%;
+  height: 1136px;
+  padding: 1.25vh;
+  border: 0.0520833vh solid #CDD1D5;
+  background-color: #FFFFFF;
+  border-radius: 0.625vh;
+  display: flex;
+  flex-direction: column;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramContentsTitle {
+  color: #035A63;
+  font-weight: 700;
+  font-size: 1.875vh;
+  margin-bottom: 1.25vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramContentsExplanation {
+  color: #1E2124;
+  font-weight: 700;
+  font-size: 1.354166vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents hr {
+  width: 100%;
+  height: 0.0520833vh;
+  background-color: #CDD1D5;
+  margin: 1.25vh 0;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents ul {
+  flex: 1;
+  padding-left: 1.875vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents ul li {
+  list-style: disc;
+  font-size: 1.354166vh;
+  color: #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents ul li p {
+  font-size: 1.354166vh;
+  color: #1E2124;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramContentsPhoto {
+  width: 100%;
+  height: 8.64583vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramContentsPhoto > img {
+  border-radius: 0.416666vh;
+  width: 16.24999vh;
+  height: 100%;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramInfoArea {
+  border: 0.0520833vh solid #CDD1D5;
+  background-color: #F3F6F7;
+  padding: 0.625vh;
+  width: 100%;
+  height: 3.28124vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramInfoArea > .main__contents--eduProgramInfo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramInfoArea > .main__contents--eduProgramInfo.wood-Info {
+  width: 100%;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramInfoArea > .main__contents--eduProgramInfo p {
+  color: #464C53;
+  font-size: 1.354166vh;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramInfoArea > .main__contents--eduProgramInfo p span {
+  font-weight: 700;
+}
+.sub-body .container main .main__content article .main__contents > div.main__contents--eduProgramArea .main__contents--eduProgramContents .main__contents--eduProgramInfoArea .main__contents--eduProgramLine {
+  width: 0.0520833vh;
+  height: 1.979166vh;
+  background-color: #CDD1D5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-body .container aside {
+  width: 100%;
+  height: 5.83333vh;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25vh;
+  border-top: 0.1041666vh solid #CDD1D5;
+  position: relative;
+}
+.sub-body .container aside .main__controls--voice {
+  display: flex;
+  align-items: center;
+}
+.sub-body .container aside .main__controls--voice p {
+  font-size: 1.354166vh;
+  margin-right: 0.833333vh;
+}
+.sub-body .container aside .main__controls--voice button {
+  width: 3.33333vh;
+  height: 3.33333vh;
+  border-radius: 52.0833vh;
+  border: 0.0520833vh solid #B1B8BE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.sub-body .container aside .main__controls--voice button.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #E6E8EA;
+}
+.sub-body .container aside .main__controls--voice button:focus-visible {
+  outline: 0.2083333vh solid #1E2124;
+}
+.sub-body .container aside .main__controls--voice button:disabled {
+  border: 0.0520833vh solid #E6E8EA;
+  background-color: #E6E8EA;
+}
+.sub-body .container aside .main__controls--voice button:disabled .lowScreenBtn-label {
+  color: #6D7882;
+}
+.sub-body .container aside .main__controls--voice button:disabled svg path {
+  fill: #6D7882;
+}
+.sub-body .container aside .main__controls--voice button.main__controls--pauseBtn svg {
+  width: 1.25vh;
+  height: 1.458332vh;
+}
+.sub-body .container aside .main__controls--voice button.main__controls--playBtn svg {
+  width: 1.09375vh;
+  height: 1.354166vh;
+}
+.sub-body .container aside .main__controls--voice button.main__controls--reproductionBtn {
+  margin-left: 0.625vh;
+}
+.sub-body .container aside .main__controls--voice button.main__controls--reproductionBtn svg {
+  width: 1.875vh;
+  height: 2.187499vh;
+}
+.sub-body .container aside .main__controls--homeBtn {
+  width: 4.16666vh;
+  height: 4.16666vh;
+  background-color: #33363D;
+  border-radius: 52.0833vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+.sub-body .container aside .main__controls--homeBtn svg {
+  width: 2.5vh;
+  height: 2.5vh;
+}
+.sub-body .container aside .main__controls--homeBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #131416;
+}
+.sub-body .container aside .main__controls--homeBtn:focus-visible {
+  outline: 0.2083333vh solid #1E2124;
+}
+.sub-body .container aside .main__controls--lowScreenBtn {
+  width: 10.41666vh;
+  height: 3.33333vh;
+  border-radius: 52.0833vh;
+  border: 0.0520833vh solid #B1B8BE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
+}
+.sub-body .container aside .main__controls--lowScreenBtn svg {
+  width: 1.666666vh;
+  height: 1.692708vh;
+}
+.sub-body .container aside .main__controls--lowScreenBtn .lowScreenBtn-label {
+  color: #1E2124;
+  font-size: 1.354166vh;
+  margin-left: 0.625vh;
+}
+.sub-body .container aside .main__controls--lowScreenBtn.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #E6E8EA;
+}
+.sub-body .container aside .main__controls--lowScreenBtn:focus-visible {
+  outline: 0.2083333vh solid #1E2124;
+}
+.sub-body .container aside .main__controls--lowScreenBtn:disabled {
+  border: 0.0520833vh solid #E6E8EA;
+  background-color: #E6E8EA;
+}
+.sub-body .container aside .main__controls--lowScreenBtn:disabled .lowScreenBtn-label {
+  color: #6D7882;
+}
+.sub-body .container aside .main__controls--lowScreenBtn:disabled svg path {
+  fill: #6D7882;
+}
+.sub-body .container footer {
+  width: 100%;
+  height: 40.8333vh;
+  background: url(/assets/images/40c2eb00d84955ae254b353d1e7d5177fc8e37c3.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 원래 푸터 스타일 유지 */
+  transition: all 0.5s ease-in-out; /* 부드러운 전환 효과 */
+  opacity: 1; /* 기본 투명도 */
+  transform: translateY(0); /* 기본 위치 */
+}
+.sub-body .container footer.moving-out {
+  opacity: 0;
+  transform: translateY(100%); /* 아래로 이동하면서 사라짐 */
+}
+.sub-body .container footer.moving-in {
+  opacity: 1;
+  transform: translateY(0); /* 아래로 이동하면서 사라짐 */
+}
+.sub-body .container footer .highScreenBtn-icon {
+  display: none; /* 초기에는 높은 화면 아이콘 숨김 */
+}
+
+/*# sourceMappingURL=sub.css.map */

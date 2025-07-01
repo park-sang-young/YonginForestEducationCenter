@@ -1,0 +1,212 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+@use '../base/common' as *;
+
+
+.intro__body {    
+    @include body;
+    background-color: $color-background-white;
+    
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: $length-160 $length-48;
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .header__logoArea {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: $length-80;
+                .header__logo {
+                    width: $length-154;
+                    height: $length-160;
+                }
+                .header__title {
+                    font-weight: 700;
+                    font-size: $font-size-heading-medium;
+                    color: $color-text-basic;
+                    margin-left: $length-16;
+                }
+            }
+            .header__timeArea {
+                 margin-bottom: $length-80;
+                .header__time {
+                    font-weight: 700;
+                    font-size: $font-size-display-small;
+                    color: $color-text-basic;
+                }
+            }
+        }
+    
+        main {
+            width: 100%;
+            flex: 1;
+            .intro__main--area {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .intro__main--swiper {
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    .swiper-slide {
+                        width: 100%;
+                        height: $length-1200;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+    
+                    .swiper-controls {
+                        width: $length-556;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: $length-60;
+                        padding: $length-08 0;
+        
+                        .swiper-pagination-numbers {
+                            font-size: $length-52;
+                            width: auto;
+                            height: $length-96;
+                            font-weight: 400;
+                            border: $length-04 solid $color-border-gray-light;
+                            border-radius: $border-radius-max;
+                            padding: 0 $length-40;
+                            color: $color-text-basic;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            .current-slide {
+                                margin-right: $length-08;
+                            }
+                            .total-slides {
+                                color: $color-text-basic;
+                                margin-left: $length-08;
+                            }
+                        }
+    
+                        .swiper-autoplay-toggle {
+                            border: $length-04 solid $color-border-gray-light;
+                            border-radius: $border-radius-max;
+                            width: $length-96;
+                            height: $length-96;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;    
+                            transition: all 0.5s ease-in-out;
+                            border-radius: $border-radius-max;
+                            position: relative;
+                            z-index: 1;
+                            
+                            &:focus-visible {
+                                transition: all 0.5s ease-in-out;
+                                outline: $length-08 solid $color-text-basic;
+                            }
+                            svg {
+                                width: $length-26;
+                                height: $length-32;
+                            }
+
+                            &.pressed {
+                                transition: all 0.5s ease-in-out;
+                                background-color: $color-text-basic;
+
+                                svg {
+                                    path {
+                                        transition: all 0.5s ease-in-out;
+                                        fill: $color-background-white;
+                                    }
+                                }
+                            }
+
+                            .sr-only {
+                                @include sr-only;
+                            }
+
+                        } 
+    
+                        .swiper-button-next, .swiper-button-prev {
+                            position: static;
+                            border: $length-04 solid $color-border-gray-light;
+                            border-radius: $border-radius-max;
+                            width: $length-96;
+                            height: $length-96;
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.5s ease-in-out;
+                            position: relative;
+                            z-index: 1;
+
+                            &:focus-visible {
+                                transition: all 0.5s ease-in-out;
+                                outline: $length-08 solid $color-text-basic;
+                            }
+
+                            &.pressed {
+                                 background-color: $color-text-basic;
+                                &::after {
+                                    transition: all 0.5s ease-in-out;
+                                    color: $color-background-white;
+                                }                                
+                            }
+                        }
+                        .swiper-button-prev {
+                            &::after {
+                                font-size: $length-40;
+                                color: $color-icon-gray;
+                                font-weight: 700;
+                            }
+                        }
+                        .swiper-button-next {
+                            &::after {
+                                font-size: $length-40;
+                                color: $color-icon-gray;
+                                font-weight: 700;
+                            }
+                        }
+    
+                    }
+                }
+
+                .intro__main--touch {
+                    margin-top: $length-80;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        width: $length-162;
+                        height: $length-160;
+                    }
+                    .intro__main--touchText {
+                        font-size: $font-size-heading-xsmall;
+                        color: $color-text-basic;
+                        margin-top: $length-48;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}

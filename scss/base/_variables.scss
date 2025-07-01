@@ -1,0 +1,247 @@
+$viewport-width: 2160px;
+$viewport-height: 3840px;
+
+// color
+$color-background-white: #000000;
+
+$color-text-basic: #F4F5F6;
+$color-text-basic-white: #1E2124;
+$color-text-border: #131416;
+$color-text-subtle: #464C53;
+$color-text-secondary: #035A63;
+$color-text-primary: #0159A3;
+$color-text-disabled-on: #6D7882;
+$color-text-inverse-static: #FFFFFF;
+
+$color-border-gray: #B1B8BE;
+$color-border-gray-light: #33363D;
+$color-border-secondary: #007C85;
+$color-border-gray-ligth-light: #CDD1D5;
+
+$color-icon-gray: #F4F5F6;
+
+$color-action-secondary: #FFFFFF;
+$color-action-secondary-hover: #F3F6F7;
+$color-action-secondary-pressed: #E6EEEF;
+
+
+$color-surface-gray-subtler: #F4F5F6;
+$color-surface-white: #FFFFFF;
+$color-surface-secondary-subtler: #F3F6F7;
+
+$color-background-white-white: #FFFFFF;
+
+$color-divider-gray-light: #CDD1D5;
+
+$color-element-secondary: #007C85;
+
+$color-button-tertiary-border: #B1B8BE;
+$color-button-tertiary-fill-pressed: #E6E8EA;
+$color-button-disabled-fill: #CDD1D5;
+
+$color-button-dark-fill: #33363D;
+$color-button-dark-fill-pressed: #131416;
+
+$color-button-text-fill-pressed: #E6EEEF;
+
+
+$border-radius-max: 52.0833vh;
+
+
+//fontSize 크기
+$font-size-heading-large: 2.083333vh; // 80px
+$font-size-heading-medium: 1.875vh; // 72px
+$font-size-heading-xsmall: 1.5625vh; // 60px
+
+$font-size-label-large: 1.5625vh; // 60px
+$font-size-label-small: 1.354166vh; // 52px;
+
+$font-size-body-medium: 1.458332vh; // 56px;
+$font-size-body-small: 1.354166vh; // 52px;
+
+$font-size-display-medium: 2.70833vh; // 104px
+$font-size-display-small: 2.291666vh; // 88px
+
+//length 2160 * 3840 기준
+$length-02: 0.0520833vh;
+$length-04: 0.1041666vh;
+$length-08: 0.2083333vh;
+$length-10: 0.260417vh;
+$length-16: 0.416666vh;
+$length-20: 0.520833vh;
+$length-24: 0.625vh;
+$length-26: 0.677083vh;
+$length-32: 0.833333vh;
+$length-40: 1.041666vh;
+$length-42: 1.09375vh;
+$length-48: 1.25vh;
+$length-52: 1.354166vh;
+$length-56: 1.458332vh;
+$length-60: 1.5625vh;
+$length-64: 1.666666vh;
+$length-65: 1.692708vh;
+$length-66: 1.71875vh;
+$length-72: 1.875vh;
+$length-76: 1.979166vh;
+$length-80: 2.083333vh;
+$length-84: 2.187499vh;
+$length-88: 2.291666vh;
+$length-90: 2.34375vh;
+$length-92: 2.395833vh;
+$length-96: 2.5vh;
+$length-104: 2.70833vh;
+$length-112: 2.916654vh;
+$length-116: 3.02083vh;
+$length-120: 3.125vh;
+$length-126: 3.28124vh;
+$length-128: 3.33333vh;
+$length-154: 4.01041vh;
+$length-160: 4.16666vh;
+$length-162: 4.21874vh;
+$length-192: 5vh;
+$length-200: 5.20833vh;
+$length-224: 5.83333vh;
+$length-320: 8.33333vh;
+$length-332: 8.64583vh;
+$length-400: 10.41666vh;
+$length-488: 12.70833vh;
+$length-556: 14.47916vh;
+$length-612: 15.93749vh;
+$length-624: 16.24999vh;
+$length-668: 17.39582vh;
+$length-800: 20.83332vh;
+$length-824: 21.45832vh;
+$length-1200: 31.25vh;
+$length-1312: 34.16654vh;
+$length-1360: 35.4166vh;
+$length-1568: 40.8333vh;
+$length-1650: 42.96863vh;
+$length-1696: 44.16654vh;
+$length-2000: 52.0833vh;
+
+// $length-02: 0.0925924vw;
+// $length-03: 0.138889vw;
+// $length-04: 0.185185vw;
+// $length-06: 0.277778vw;
+// $length-08: 0.3703702vw;
+// $length-10: 0.462963vw;
+// $length-12: 0.555554vw;
+// $length-16: 0.74074vw;
+// $length-17: 0.787035vw;
+// $length-20: 0.925924vw;
+// $length-21: 0.97222vw;
+// $length-22: 1.01852vw;
+// $length-24: 1.111109vw;
+// $length-26: 1.203702vw;
+// $length-27: 1.25vw;
+// $length-28: 1.296294vw;
+// $length-30: 1.38889vw;
+// $length-32: 1.48148vw;
+// $length-33: 1.52778vw;
+// $length-34: 1.574072vw;
+// $length-36: 1.666665vw;
+// $length-40: 1.85185vw;
+// $length-41: 1.89815vw;
+// $length-42: 1.944443vw;
+// $length-44: 2.037035vw;
+// $length-45: 2.083331vw;
+// $length-46: 2.129628vw;
+// $length-48: 2.22222vw;
+// $length-49: 2.26852vw;
+// $length-50: 2.314813vw;
+// $length-52: 2.407406vw;
+// $length-53: 2.453702vw;
+// $length-54: 2.499998vw;
+// $length-56: 2.59861vw;
+// $length-60: 2.77778vw;
+// $length-64: 2.962961vw;
+// $length-66: 3.055554vw;
+// $length-68: 3.14815vw;
+// $length-70: 3.24074vw;
+// $length-71: 3.294662vw;
+// $length-72: 3.333332vw;
+// $length-79: 3.657406vw;
+// $length-80: 3.703702vw;
+// $length-83: 3.8425903vw;
+// $length-86: 3.98148vw;
+// $length-92: 4.25926vw;
+// $length-96: 4.444443vw;
+// $length-100: 4.62963vw;
+// $length-112: 5.1852vw;
+// $length-120: 5.55554vw;
+// $length-128: 5.925903vw;
+// $length-140: 6.4815vw;
+// $length-154: 7.129607vw;
+// $length-160: 7.4074vw;
+// $length-176: 8.14813vw;
+// $length-186: 8.61109vw;
+// $length-192: 8.8889vw;
+// $length-200: 9.25924vw;
+// $length-208: 9.629607vw;
+// $length-224: 10.37035vw;
+// $length-228: 10.55554vw;
+// $length-240: 11.1111vw;
+// $length-256: 11.85183vw;
+// $length-260: 12.03702vw;
+// $length-262: 12.129607vw;
+// $length-268: 12.4074vw;
+// $length-272: 12.59257vw;
+// $length-284: 13.14813vw;
+// $length-288: 13.333311vw;
+// $length-320: 14.8148vw;
+// $length-324: 14.99998vw;
+// $length-340: 15.74072vw;
+// $length-350: 16.2037vw;
+// $length-360: 16.66665vw;
+// $length-392: 18.14813vw;
+// $length-396: 18.333311vw;
+// $length-400: 18.5185vw;
+// $length-408: 18.8889vw; 
+// $length-440: 20.37035vw;
+// $length-465: 21.5278vw;
+// $length-466: 21.57406vw;
+// $length-490: 22.68517vw;
+// $length-492: 22.7778vw;
+// $length-500: 23.14813vw;
+// $length-504: 23.33332vw;
+// $length-526: 24.35183vw;
+// $length-532: 24.62961vw;
+// $length-547: 25.32406vw;
+// $length-560: 25.925902vw;
+// $length-600: 27.7778vw;
+// $length-640: 29.62961vw;
+// $length-645: 29.86109vw;
+// $length-656: 30.37035vw;
+// $length-680: 31.4815vw;
+// $length-690: 31.94443vw;
+// $length-720: 33.33331vw;
+// $length-740: 34.25924vw;
+// $length-768: 35.55554vw;
+// $length-808: 37.40739vw;
+// $length-840: 38.8889vw;
+// $length-860: 39.8148vw;
+// $length-982: 45.46294vw;
+// $length-1000: 46.29628vw;
+// $length-1008: 46.6665vw;
+// $length-1010: 46.75903vw;
+// $length-1032: 47.7776vw;
+// $length-1080: 50vw;
+// $length-1168: 54.07385vw;
+// $length-1180: 54.6295vw;
+// $length-1200: 55.5554vw;
+// $length-1248: 57.7776vw;
+// $length-1288: 59.6295vw;
+// $length-1320: 61.111vw;
+// $length-1360: 62.9628vw;
+// $length-1377: 63.75vw;
+// $length-1442: 66.75904vw;
+// $length-1578: 73.0554vw;
+// $length-1585: 73.55vw;
+// $length-1600: 74.246vw;
+// $length-1642: 76.0183vw;
+// $length-1656: 76.8444vw;
+// $length-1676: 77.5924vw;
+// $length-1712: 79.443vw;
+// $length-1860: 86.111vw;
+// $length-2064: 95.5554vw;
+// $length-2286: 105.8332vw;

@@ -1,0 +1,196 @@
+.intro__body {
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(-5.20833vh);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  background-color: #FFFFFF;
+  background-color: #000000;
+}
+.intro__body.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+.intro__body .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4.16666vh 1.25vh;
+}
+.intro__body .container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__body .container header .header__logoArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.083333vh;
+}
+.intro__body .container header .header__logoArea .header__logo {
+  width: 4.01041vh;
+  height: 4.16666vh;
+}
+.intro__body .container header .header__logoArea .header__title {
+  font-weight: 700;
+  font-size: 1.875vh;
+  color: #F4F5F6;
+  margin-left: 0.416666vh;
+}
+.intro__body .container header .header__timeArea {
+  margin-bottom: 2.083333vh;
+}
+.intro__body .container header .header__timeArea .header__time {
+  font-weight: 700;
+  font-size: 2.291666vh;
+  color: #F4F5F6;
+}
+.intro__body .container main {
+  width: 100%;
+  flex: 1;
+}
+.intro__body .container main .intro__main--area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-slide {
+  width: 100%;
+  height: 31.25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls {
+  width: 14.47916vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5625vh;
+  padding: 0.2083333vh 0;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-pagination-numbers {
+  font-size: 1.354166vh;
+  width: auto;
+  height: 2.5vh;
+  font-weight: 400;
+  border: 0.1041666vh solid #33363D;
+  border-radius: 52.0833vh;
+  padding: 0 1.041666vh;
+  color: #F4F5F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-pagination-numbers .current-slide {
+  margin-right: 0.2083333vh;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-pagination-numbers .total-slides {
+  color: #F4F5F6;
+  margin-left: 0.2083333vh;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-autoplay-toggle {
+  border: 0.1041666vh solid #33363D;
+  border-radius: 52.0833vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 52.0833vh;
+  position: relative;
+  z-index: 1;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-autoplay-toggle:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.2083333vh solid #F4F5F6;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-autoplay-toggle svg {
+  width: 0.677083vh;
+  height: 0.833333vh;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-autoplay-toggle.pressed {
+  transition: all 0.5s ease-in-out;
+  background-color: #F4F5F6;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-autoplay-toggle.pressed svg path {
+  transition: all 0.5s ease-in-out;
+  fill: #000000;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-autoplay-toggle .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-next, .intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-prev {
+  position: static;
+  border: 0.1041666vh solid #33363D;
+  border-radius: 52.0833vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-next:focus-visible, .intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-prev:focus-visible {
+  transition: all 0.5s ease-in-out;
+  outline: 0.2083333vh solid #F4F5F6;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-next.pressed, .intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-prev.pressed {
+  background-color: #F4F5F6;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-next.pressed::after, .intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-prev.pressed::after {
+  transition: all 0.5s ease-in-out;
+  color: #000000;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-prev::after {
+  font-size: 1.041666vh;
+  color: #F4F5F6;
+  font-weight: 700;
+}
+.intro__body .container main .intro__main--area .intro__main--swiper .swiper-controls .swiper-button-next::after {
+  font-size: 1.041666vh;
+  color: #F4F5F6;
+  font-weight: 700;
+}
+.intro__body .container main .intro__main--area .intro__main--touch {
+  margin-top: 2.083333vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro__body .container main .intro__main--area .intro__main--touch svg {
+  width: 4.21874vh;
+  height: 4.16666vh;
+}
+.intro__body .container main .intro__main--area .intro__main--touch .intro__main--touchText {
+  font-size: 1.5625vh;
+  color: #F4F5F6;
+  margin-top: 1.25vh;
+}
+
+/*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,523 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+@use '../base/common' as *;
+@use '../components/button' as *;
+
+.sub-body {
+    @include body;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        header {
+            @include header;
+        }
+
+        main {
+            @include main;
+            padding: 0;
+            .main__content {
+                height: 100%;
+                .sr-only {
+                    @include sr-only;
+                }
+                article {
+                    height: 100%;
+                    .main__navigation {
+                        @include nav;
+                    }
+                    .main__contents {
+                        @include sub-contents;
+                        > div {
+                            .main__contents--photoArea {
+                                width: $length-1360;
+                                height: $length-800;
+                                border-radius: $length-24;
+
+                                &.main__contents--photoEdu1F {
+                                    background: url(/assets/images/cff3858f45ba746c55aabc8f9426e8c03797239a.jpg) no-repeat;
+                                    background-size: cover;
+                                    background-position: center center;
+                                }
+                                &.main__contents--photoEdu2F {
+                                    background: url(/assets/images/263270bf861f11e6a18e7d7f42eb00f55719c12f.jpg) no-repeat;
+                                    background-size: cover;
+                                    background-position: center center;
+                                }
+                                &.main__contents--photoEdu3F {
+                                    background: url(/assets/images/bc4a245f3f37d0a8d817ad746e1c526dc31a7de7.jpg) no-repeat;
+                                    background-size: cover;
+                                    background-position: center center;
+                                }
+                                &.main__contents--photoAccommodation {
+                                    background: url(/assets/images/0a5e3480caf0c3caeffe8d799971aafb04228cbd.png) no-repeat;
+                                    background-size: cover;
+                                    background-position: center center;
+                                }
+                                &.main__contents--photoWelfare {
+                                    background: url(/assets/images/5b8ed1becbdc1c84a1fa727f798cc2170c152658.jpg) no-repeat;
+                                    background-size: cover;
+                                    background-position: center center;
+                                }
+                            }
+                            .main__contents--contentArea {
+                                margin-top: $length-48;
+                                width: $length-1360;
+                                min-height: 13.38411vh;
+                                padding: $length-48;
+                                background-color: $color-surface-white;
+                                border: $length-02 solid $color-border-gray-ligth-light;
+                                border-radius: $length-24;
+
+                                .main__contents--title {
+                                    color: $color-text-secondary;
+                                    font-weight: 700;
+                                    font-size: $font-size-heading-medium;
+                                }
+                                .main__contents--explanation {
+                                    margin-top: $length-32;
+                                    padding-left: $length-72;
+                                    li {
+                                        list-style: disc;
+                                        font-size: $font-size-body-small;
+                                        color: $color-text-basic-white;
+                                        p {
+                                            font-size: $font-size-body-medium;
+                                            color: $color-text-basic-white
+                                        }
+                                    }
+                                }
+                            }
+
+                            .main__contents--greetingsArea {
+
+                            }
+
+                            &.main__contents--greetings {
+                                flex-direction: row;
+                                padding: 0 $length-48;
+                            }
+                            
+                            .main__contents--greetingsArea {
+                                width: $length-1360;
+                                border-radius: $length-24;
+                                border: $length-02 solid $color-border-gray-ligth-light;
+                                padding: $length-48;
+
+                                .main__contents--greetingText {
+                                    .greetingTitle {
+                                        color: $color-text-secondary;
+                                        font-size: $font-size-heading-medium;
+                                        font-weight: 700;
+                                        margin-bottom: $length-48;
+                                    }
+                                    .greetingWelcome {
+                                        font-weight: 700;
+                                        color: $color-text-basic-white;
+                                        font-size: $font-size-body-small;
+                                    }
+
+                                    .greetingThank {
+                                        color: $color-text-basic-white;
+                                        font-size: $font-size-body-small;
+                                    }
+                                }
+                                hr {
+                                    width: 100%;
+                                    height: $length-02;
+                                    background-color: $color-border-gray-ligth-light;
+                                    margin: $length-48 0;
+                                }
+
+                            }
+                            .main__content--videoArea {
+                                flex: 1;
+                                position: relative;
+                                video {
+                                    max-width: $length-824;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                            &.main__contents--facilities {
+                                padding: 0 $length-48;
+                            }
+                            .main__contents--facilitiesArea {
+                                width: 100%;
+                                border: $length-02 solid $color-border-gray-ligth-light;
+                                padding: $length-48;
+                                border-radius: $length-24;
+
+                                .main__contents--facilitiesText {
+                                    .facilitiesTitle {
+                                        color: $color-text-secondary;
+                                        font-size: $font-size-heading-medium;
+                                        font-weight: 700;
+                                        margin-bottom: $length-48;
+                                    }
+                                    .facilitiesWelcome {
+                                        font-weight: 700;
+                                        color: $color-text-basic-white;
+                                        font-size: $font-size-body-small;
+                                    }
+
+                                    
+                                }
+                                hr {
+                                    width: 100%;
+                                    height: $length-02;
+                                    background-color: $color-border-gray-ligth-light;
+                                    margin: $length-48 0;
+                                }
+
+                                .main__contents--facilitiesExplanationArea {
+                                    
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .main__contents--facilitiesTitle {
+                                        p {
+                                            color: $color-text-secondary;
+                                            font-size: $font-size-body-small;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                    .main__contents--facilitiesExplanation {
+                                        width: $length-1650;
+                                        
+                                        > p {
+                                            font-weight: 700;
+                                            font-size: $font-size-body-small;
+                                            padding: 0;
+                                        }
+                                        ul {
+                                            padding-left: $length-72;
+                                            li {
+                                                list-style: disc;
+                                                font-size: $font-size-body-small;
+                                                color: $color-text-basic-white;
+                                                p {
+                                                    font-size: $font-size-body-medium;
+                                                    color: $color-text-basic-white
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+
+                            &.main__contents--educationCenter {
+                                padding: $length-80 $length-48;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                .main__content--tabBtn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    button {
+                                        @include tabBtn;
+                                        margin-right: $length-24;
+
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                                .main__content--tabArea {
+                                    border: $length-02 solid $color-border-gray-ligth-light;
+                                    border-radius: $length-24;
+                                    width: 100%;
+                                    height: $length-1312;
+
+                                    > div {
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        transform: translateX(5.20833vh); /* 초기 위치 */
+                                        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s;
+                                        &.active {
+                                            opacity: 1;
+                                            visibility: visible;
+                                            transform: translateX(0);
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            &.main__contents--Accommodation {
+                                padding: $length-80 $length-48;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                .main__content--tabBtn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    button {
+                                        @include tabBtn;
+                                        margin-right: $length-24;
+
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                                .main__content--tabArea {
+                                    border: $length-02 solid $color-border-gray-ligth-light;
+                                    border-radius: $length-24;
+                                    width: 100%;
+                                    height: $length-1312;
+
+                                    > div {
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        transform: translateX(5.20833vh); /* 초기 위치 */
+                                        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s;
+                                        &.active {
+                                            opacity: 1;
+                                            visibility: visible;
+                                            transform: translateX(0);
+                                        }
+
+                                    }
+                                }
+                            }
+                            
+                            &.main__contents--eduProgramArea {
+                                padding: $length-80 $length-48;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .main__contents--eduProgramTitleArea {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .main__contents--eduProgramPhotoTitle {
+                                        width: $length-1696;
+                                        height: $length-320;
+                                        padding: $length-48;
+                                        border-radius: $length-24;
+                                        display: flex;
+                                        align-items: center;
+
+                                        &.forestRoad-title {
+                                            background: url(/assets/images/14042cc7da7a79f520b36dc1001372f396946820.png) no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;
+                                            
+                                        }
+
+                                        &.forestCommentary-title {
+                                            background: url(/assets/images/c4d36fe45e504313afede4bfbc8608df2625bba9.png) no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;
+                                        }
+
+                                        &.forestHealing-title {
+                                            background: url(/assets/images/73dfcfc469e3896127d2fd3af64b08f23493d0b7.png) no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;
+                                        }
+                                        &.wood-title {
+                                            background: url(/assets/images/5c684ef2608c1cc4e220e2372d59c6bd304b5c2b.png) no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;
+                                        }
+                                        &.youForest-title {
+                                            background: url(/assets/images/e21a9af4ad893f620234a2ee0ea2dbf8740e369c.png) no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;
+                                        }
+                                        &.infant-title {
+                                            background: url(/assets/images/fb4b9cb6c484abb814fd04cd8a1b332413bf9743.png) no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;
+                                        }
+                                        > p {
+                                            font-size: $length-104;
+                                            font-weight: 700;
+                                            color: $color-text-inverse-static;
+                                        }
+                                    }
+                                    .main__contents--eduProgramQRcode {
+                                        width: $length-320;
+                                        height: $length-320;
+                                        border: $length-02 solid $color-border-gray-ligth-light;
+                                        border-radius: $length-24;
+                                        padding: $length-24;
+
+                                        .qrcodeArea {
+                                            width: 100%;
+                                            height: 100%;
+                                            &.forestRoad-QRcode {
+                                                // background: url(/assets/images/forestRoadQR.png) no-repeat;
+                                                background-size: cover;
+                                            }
+                                            &.forestCommentary-QRcode {
+                                                // background: url(/assets/images/forestCommentaryQR.png) no-repeat;
+                                                background-size: cover;
+                                            }
+                                            &.forestHealing-QRcode {
+                                                // background: url(/assets/images/forestHealingQR.png) no-repeat;
+                                                background-size: cover;
+                                            }
+                                            &.wood-QRcode {
+                                                // background: url(/assets/images/woodQR.png) no-repeat;
+                                                background-size: cover;
+                                            }
+                                            &.youForest-QRcode {
+                                                // background: url(/assets/images/youForestQR.png) no-repeat;
+                                                background-size: cover;
+                                            }
+                                            &.infant-QRcode {
+                                                // background: url(/assets/images/infantQR.png) no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                                .main__contents--eduProgramContents {
+                                    width: 100%;
+                                    height: 1136px;
+                                    padding: $length-48;
+                                    border: $length-02 solid $color-border-gray-ligth-light;
+                                    background-color: $color-surface-white;
+                                    border-radius: $length-24;
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .main__contents--eduProgramContentsTitle {
+                                        color: $color-text-secondary;
+                                        font-weight: 700;
+                                        font-size: $font-size-heading-medium;
+                                        margin-bottom: $length-48;
+                                    }
+                                    .main__contents--eduProgramContentsExplanation {
+                                        color: $color-text-basic-white;
+                                        font-weight: 700;
+                                        font-size: $font-size-body-small;
+                                    }
+                                    hr {
+                                        width: 100%;
+                                        height: $length-02;
+                                        background-color: $color-border-gray-ligth-light;
+                                        margin: $length-48 0;
+                                    }
+                                    ul {
+                                        flex: 1;
+                                        padding-left: $length-72;
+                                        li {
+                                            list-style: disc;
+                                            font-size: $font-size-body-small;
+                                            color: $color-text-basic-white;
+                                            p {
+                                                font-size: $font-size-body-small;
+                                                color: $color-text-basic-white
+                                            }
+                                        }
+                                    }
+                                    .main__contents--eduProgramContentsPhoto {
+                                        width: 100%;
+                                        height: $length-332;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        margin-bottom: $length-48;
+                                        > img {
+                                            border-radius: $length-16;
+                                            width: $length-624;
+                                            height: 100%;
+                                        }
+                                        // > div {
+                                        //     border-radius: $length-16;
+                                        //     width: $length-624;
+                                        //     height: 100%;
+                                        //     &:nth-of-type(1) {
+                                        //         background: url(/assets/images/6c626d0b7f5ab8a472644126cd617b3011291bc7.png) no-repeat;
+                                        //         background-size: cover;
+                                        //         background-position: center center;
+                                        //     }
+                                        //     &:nth-of-type(2) {
+                                        //         background: url(/assets/images/c12ddea9e19e4702ca8a101679d330230f3827a7.png) no-repeat;
+                                        //         background-size: cover;
+                                        //         background-position: center center;
+                                        //     }
+                                        //     &:nth-of-type(3) {
+                                        //         background: url(/assets/images/c89377560650b16c653297fac67b6727838a5c64.png) no-repeat;
+                                        //         background-size: cover;
+                                        //         background-position: center center;
+                                        //     }
+                                        // }
+                                    }
+                                    .main__contents--eduProgramInfoArea {
+                                        border: $length-02 solid $color-border-gray-ligth-light;
+                                        background-color: $color-surface-secondary-subtler;
+                                        padding: $length-24;
+                                        width: 100%;
+                                        height: $length-126;
+                                        display: flex;
+                                        align-items: center;
+                                        position: relative;
+
+                                        > .main__contents--eduProgramInfo {
+                                            width: 50%;
+                                            height: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+
+                                            &.wood-Info {
+                                                width: 100%;
+                                            }
+                                            
+                                            p {
+                                                color: $color-text-subtle;
+                                                font-size: $font-size-body-small;
+                                                span {
+                                                    font-weight: 700;
+                                                }
+                                            }
+                                        }
+
+                                        .main__contents--eduProgramLine {
+                                            width: $length-02;
+                                            height: $length-76;
+                                            background-color: $color-border-gray-ligth-light;
+                                            position: absolute;
+                                            left: 50%;
+                                            top: 50%;
+                                            transform: translate(-50%, -50%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        aside {
+            @include aside;
+             
+        }
+        footer {
+            @include footer;
+        }
+    }
+}

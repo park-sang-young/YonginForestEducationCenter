@@ -1,0 +1,178 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+@mixin main-button {
+    width: $length-668;
+    height: $length-400;
+    border: $length-04 solid $color-border-secondary;
+    background-color: $color-action-secondary;
+    border-radius: $length-24;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out; 
+
+    .main__menu--iconArea {
+        width: $length-120;
+        height: $length-120;
+        border-radius: $border-radius-max;
+        background-color: $color-element-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: $length-64;
+            height: $length-66;
+        }
+    }
+
+    .main__menu--menuTitle {
+        color: $color-text-secondary;
+        font-weight: 700;
+        font-size: $font-size-label-large;
+        margin-top: $length-32;
+    }
+
+    &.pressed {
+        transition: all 0.5s ease-in-out;
+        background-color: $color-action-secondary-pressed;
+    }
+
+    &:focus-visible {
+        outline: $length-08 solid $color-text-basic-white;
+    }
+}
+
+@mixin tabBtn {
+    width: $length-320;
+    height: $length-112;
+    padding: $length-40 0;
+    border-radius: $length-16;
+    border: $length-02 solid $color-border-gray;
+    background-color: $color-action-secondary;
+    color: $color-text-subtle;
+    font-weight: 700;
+    font-size: $font-size-label-small;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        background-color: $color-border-secondary;
+        border: $length-02 solid $color-border-secondary;
+        color: $color-text-inverse-static;
+    }
+
+    &.pressed {
+        transition: all 0.5s ease-in-out;
+        background-color: $color-action-secondary-pressed;
+    }
+
+    &:focus-visible {
+        outline: $length-08 solid $color-text-basic-white;
+    }
+}
+
+@mixin homeBtn {
+    width: $length-160;
+    height: $length-160;
+    background-color: $color-button-dark-fill;
+    border-radius: $border-radius-max;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    svg {
+        width: $length-96;
+        height: $length-96;
+    }
+    &.pressed {
+        transition: all 0.5s ease-in-out;
+        background-color: $color-button-dark-fill-pressed;
+    }
+
+    &:focus-visible {
+        outline: $length-08 solid $color-text-basic-white;
+    }
+}
+
+@mixin controlsBtn {
+    width: $length-128;
+    height: $length-128;
+    border-radius: $border-radius-max;
+    border: $length-02 solid $color-button-tertiary-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+    &.pressed {
+        transition: all 0.5s ease-in-out;
+        background-color: $color-button-tertiary-fill-pressed;
+    }
+
+    &:focus-visible {
+        outline: $length-08 solid $color-text-basic-white;
+    }
+    &:disabled {
+        border: $length-02 solid $color-button-tertiary-fill-pressed;
+        background-color: $color-button-tertiary-fill-pressed;
+        .lowScreenBtn-label {
+            color: $color-text-disabled-on;
+        }
+        svg {
+            path {
+                fill: $color-text-disabled-on;
+            }
+        }
+    }
+}
+
+@mixin screenBtn {
+    width: $length-400;
+    height: $length-128;
+    border-radius: $border-radius-max;
+    border: $length-02 solid $color-button-tertiary-border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-background-white-white;
+    transition: all 0.5s ease-in-out;
+    svg {
+        width: $length-64;
+        height: $length-65;
+    }
+    .lowScreenBtn-label {
+        color: $color-text-basic-white;
+        font-size: $font-size-label-small;
+        margin-left: $length-24;
+    }
+
+    &.pressed {
+        transition: all 0.5s ease-in-out;
+        background-color: $color-button-tertiary-fill-pressed;
+    }
+
+    &:focus-visible {
+        outline: $length-08 solid $color-text-basic-white;
+    }
+    &:disabled {
+        border: $length-02 solid $color-button-tertiary-fill-pressed;
+        background-color: $color-button-tertiary-fill-pressed;
+        .lowScreenBtn-label {
+            color: $color-text-disabled-on;
+        }
+        svg {
+            path {
+                fill: $color-text-disabled-on;
+            }
+        }
+    }
+}
